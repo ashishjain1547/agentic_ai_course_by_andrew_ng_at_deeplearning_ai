@@ -1,0 +1,75 @@
+<article class="prose"><h3>🧩 Optional: Set up your local environment for the ungraded labs</h3>
+<p>If you’d like to try the ungraded labs on your own machine, follow these steps:</p>
+<blockquote>
+<p>💡 <strong>Note:</strong> When you download an ungraded lab to run locally, don’t forget to also download <strong>all the files it depends on</strong> (such as helper scripts, config files, or data files).<br>
+To do this, use the <strong>“Open in Jupyter Notebook”</strong> option within the course, then download the notebook and any related files to your local machine.</p>
+</blockquote>
+<ol>
+<li>
+<p>Make sure you have <strong>Python 3.10+</strong> installed.</p>
+</li>
+<li>
+<p>(Recommended) Create and activate a virtual environment:</p>
+<pre><code class="language-bash">python -m venv venv
+source venv/bin/activate     # On Windows: venv\Scripts\activate
+</code></pre>
+</li>
+<li>
+<p>Create a new file named <strong>requirements.txt</strong> and copy the code provided at the end of this section.</p>
+</li>
+<li>
+<p>Install all required libraries:</p>
+<pre><code class="language-bash">pip install -r requirements.txt
+</code></pre>
+</li>
+<li>
+<p>(Optional) Link this environment to your IDE or Jupyter notebook:</p>
+<pre><code class="language-bash">python -m ipykernel install --user --name=venv
+</code></pre>
+</li>
+</ol>
+<p>After that, you’ll be ready to explore the ungraded labs locally 🚀</p>
+<hr>
+<h3>📄 Content for <strong>requirements.txt</strong></h3>
+<pre><code class="language-txt"># === Agent + LLM Tools ===
+aisuite==0.1.11
+anthropic
+docstring-parser
+markdown
+mistralai
+openai
+qrcode
+tavily-python&gt;=0.7.12
+textstat
+vertexai
+
+# === Web Framework + API ===
+fastapi
+pydantic
+pydantic[email]
+python-dotenv
+python-multipart
+requests
+sqlalchemy
+uvicorn
+
+# === Notebook Experience ===
+ipywidgets
+jupyter_server
+nbclassic
+notebook
+
+# === Data Analysis / Display (Optional Enhancements) ===
+duckdb
+matplotlib
+pandas
+seaborn
+tabulate
+tinydb
+
+# === Machine Learning / NLP (Optional Enhancements) ===
+jinja2
+psycopg2-binary
+scikit-learn
+Wikipedia
+</code></pre></article>
