@@ -1,0 +1,2 @@
+# agentic_ai_course_by_andrew_ng_at_deeplearning_ai
+Labs of 'agentic_ai_course_by_andrew_ng_at_deeplearning_ai'
